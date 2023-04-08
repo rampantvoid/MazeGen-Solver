@@ -17,9 +17,9 @@ print("\nWelcome! Get to know how your real world navigation problems are solved
 while True:
 
     opt = input(
-        "To start enter size of the maze(2D square matrix) to be generated(Enter 'Q' or 'q' to quit) : ")
+        "To start enter size(<= 50) of the maze(2D square matrix) to be generated(Enter 'Q' or 'q' to quit) : ")
 
-    if (opt == 'q' or opt == 'Q'):
+    if (opt == 'q' or opt == 'Q') or int(opt) > 50:
         break
 
     size = int(opt)
@@ -53,6 +53,6 @@ while True:
     print("Sucessfuly Generated Solution!")
     display(maze, size)
     print("\nHave a look at the maze the solution path is marked with '*' symbol")
-    print("Just like that within a second we generated our path to the destination.\nNow you can imagine how our navigation system navigates us through roads!\n\n")
+    # print("Just like that within a second we generated our path to the destination.\nNow you can imagine how our navigation system navigates us through roads!\n\n")
 
 print("Thank you for using this program. Have a nice day :)")
