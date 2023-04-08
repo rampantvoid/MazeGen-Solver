@@ -1,6 +1,8 @@
 '''Uses Randamized Depth First Search(DFS)/Recursive Backtracker to Generate a Maze'''
 
 import random
+import sys
+sys.setrecursionlimit(5000)
 
 
 def Valid_neighbours(curr_x, curr_y, maze, n, neighbours):
