@@ -42,7 +42,7 @@ while True:
     while (response.lower() != 'solve'):
 
         count += 1
-        response = input(print('Please Enter a Valid response! : '))
+        response = input(print('Please Enter a Valid response! :\n'))
 
         if count > 3:
             print('Too many tries. Reseting Program')
