@@ -109,17 +109,17 @@ def Maze(size):
     for i in range(size):
         a = []
         for j in range(size):
-            a.append('#')
+            a.append('█')
         maze.append(a)
 
     generate_Paths(start_x, start_y, end_x, end_y, maze, size)
 
     maze[start_x][start_y] = '*'
-    maze[end_x][end_y] = '*'
+    maze[end_x][end_y] = ' '
 
     for i in range(size):
         for j in range(size):
-            print(maze[i][j], end=' ')
+            print(maze[i][j], end='')
         print()
 
     return maze
